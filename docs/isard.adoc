@@ -1,0 +1,274 @@
+=== Instalación del servidor
+
+Para poder utilizar la aplicación deberemos de tener instalado lo siguiente
+
+- GIT 
+- Composer 
+- Apache
+- PHP 
+- Docker
+
+==== Instalación apache, git y php
+[source, sh]
+----
+sudo apt-get install git php apache2 -y
+----
+
+==== Instalación composer
+
+[source, sh]
+----
+apt install git curl php-cli unzip
+
+curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
+
+HASH=`curl -sS https://composer.github.io/installer.sig`
+
+php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+
+# Deberá de salir 'Installer verified' si se instalo correctamente
+
+sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
+composer #Para saber que se instalo correctamente
+
+----
+
+==== Instalación Docker
+
+[source, sh]
+----
+sudo apt-get update
+
+sudo apt-get install ca-certificates curl gnupg
+
+sudo install -m 0755 -d /etc/apt/keyrings
+
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt-get update
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+----
+
+=== Configuración de la aplicación
+
+Primero clonamos el repositorio con la app 
+
+[source, sh]
+----
+cd /var/www/html/
+sudo git clone https://git.copernic.cat/arrua.dominguez.brian.tobias/gr6-arrua-galindo-jumelle.git
+----
+
+Luego deberás de configurar el apache con el directorio de la carpeta de la app
+
+[source, sh]
+----
+sudo nano /etc/apache2/sites-available/laravel.conf
+----
+
+[source,ruby]
+----
+<VirtualHost *:80>
+    ServerAdmin isard@localhost
+    ServerName 10.2.115.24 #ip o dirección web
+    DocumentRoot /var/www/html/gr6-arrua-galindo-jumelle/site/public/ #Esta es la carpeta (Tenés que poner la public)
+
+    <Directory /var/www/html/gr6-arrua-galindo-jumelle/site/public>
+            Options Indexes FollowSymLinks
+            AllowOverride All
+            Require all granted
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+----
+
+Activamos la configuración creada y desactivamos la que viene por defecto
+
+[source,sh]
+----
+sudo a2ensite laravel
+sudo a2dissite 000-default.conf
+sudo service apache2 restart
+----
+
+==== HTTPS Configuration
+
+Para realizar la redirección de http a https se deben realizar los siguientes comandos
+
+[source,sh]
+----
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
+----
+
+Al ejecturalo verán que pide que completen una serie de preguntas, la unica importante es la de 'Common Name' donde deberán de colocar su ip del servidor.
+
+[source, sh]
+----
+sudo nano /etc/apache2/conf-available/ssl-params.conf
+sudo cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/default-ssl.conf.bak
+sudo nano /etc/apache2/sites-available/default-ssl.conf
+----
+
+En el archivo que se abre deberan de colocar lo siguiente
+
+[source, ruby]
+----
+<IfModule mod_ssl.c>
+        <VirtualHost _default_:443>
+                ServerAdmin webmaster@localhost #Acá colocaran lo que colocaron en email adress con la primera comanda
+
+                DocumentRoot /var/www/html
+
+                ErrorLog ${APACHE_LOG_DIR}/error.log
+                CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+                SSLEngine on
+
+                SSLCertificateFile      /etc/ssl/certs/ssl-cert-snakeoil.pem
+                SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
+
+                <FilesMatch "\.(cgi|shtml|phtml|php)$">
+                                SSLOptions +StdEnvVars
+                </FilesMatch>
+                <Directory /usr/lib/cgi-bin>
+                                SSLOptions +StdEnvVars
+                </Directory>
+
+        </VirtualHost>
+</IfModule>
+----
+
+Tamibién deben de cambiar/crear el siguiente fichero
+[source, sh]
+----
+sudo nano /etc/apache2/conf-available/ssl-params.conf
+----
+
+Donde colocarán lo siguiente:
+
+[source,ruby]
+----
+SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH
+SSLProtocol All -SSLv2 -SSLv3 -TLSv1 -TLSv1.1
+SSLHonorCipherOrder On
+# Disable preloading HSTS for now.  You can use the commented out header line that includes
+# the "preload" directive if you understand the implications.
+# Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+Header always set X-Frame-Options DENY
+Header always set X-Content-Type-Options nosniff
+# Requires Apache >= 2.4
+SSLCompression off
+SSLUseStapling on
+SSLStaplingCache "shmcb:logs/stapling-cache(150000)"
+# Requires Apache >= 2.4.11
+SSLSessionTickets Off
+----
+
+Después configuramos el mismo archivo donde configuramos el apache con anterioridad
+
+[source, sh]
+----
+sudo nano /etc/apache2/sites-available/laravel.conf
+----
+
+En el archivo pondran la siguiente linea
+
+[source, ruby]
+----
+<VirtualHost *:80>
+        . . .
+
+        Redirect "/" "https://your_domain_or_IP/"
+
+        . . .
+</VirtualHost>
+----
+
+A posteriori realizaremos las siguientes comandas
+
+[source, sh]
+----
+sudo ufw app list #Si sale que no conoce la comanda realiza antes 'sudo apt install ufw'
+sudo ufw status #Si sale inactive realiza 'sudo ufw enable'
+sudo ufw allow 'WWW Full'
+sudo ufw delete allow 'WWW'
+sudo ufw status #Revise si funciona con la siguiente comanda
+----
+
+Con la última comanda deberá de salir:
+
+[source, sh]
+----
+Output
+Status: active
+
+To                         Action      From
+--                         ------      ----
+OpenSSH                    ALLOW       Anywhere
+WWW Full                   ALLOW       Anywhere
+OpenSSH (v6)               ALLOW       Anywhere (v6)
+WWW Full (v6)              ALLOW       Anywhere (v6)
+----
+
+Y por último debemos activar lo siguiente:
+
+[source, sh]
+----
+sudo a2enmod ssl
+sudo a2enmod headers
+sudo a2ensite default-ssl
+sudo a2enconf ssl-params
+sudo apache2ctl configtest #Si salio bien saldrá 'Syntax OK'
+sudo systemctl restart apache2
+----
+
+Para aplicar los cambios:
+
+[source, sh]
+----
+sudo systemctl restart apache2
+----
+
+
+Ahora seguimos configurando la app, en la carpeta de site deberás de ejecutar los siguientes comandos de **Composer**
+
+[source, sh]
+----
+cd gr6-arrua-galindo-jumelle/site
+sudo composer install
+sudo cp .env.example .env
+sudo php artisan key:generate
+sudo npm install fullcalendar fullcalendar-scheduler #Si no encuentra el comando realiza 'sudo apt install npm'
+----
+
+[source, sh]
+----
+cd docker/
+sudo docker compose up -d
+----
+
+Al ya tener el docker/bd, se debe de colocar los puertos, nombre de la bd y demás en el archivo **.env**, si no tocaste nada del docker el archivo estará correcto al copiarlo. 
+
+También deberás de añadir el grupo www-data a los permisos de la carpeta, como grupo propietario ademas de otorgar permisos de escritura para grupos
+
+[source, sh]
+----
+sudo chown -R www-data:www-data site/
+sudo chmod -R 775 site/
+cd site/
+sudo php artisan migrate
+sudo php artisan db:seed --class=CategoriesTableSeeder
+----
+
+Con todo esto, si no se ha encontrado con errores, uno ya debería de poder usar la aplicación con libertad.

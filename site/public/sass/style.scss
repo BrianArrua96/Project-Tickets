@@ -1,0 +1,1239 @@
+/*Estilos generales*/
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/*Estilos para el header y el footer*/
+header {
+    background-color: black;
+    height: 15%;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    align-content: center;
+
+    .titulo {
+        justify-self: center;
+        color: white;
+    }
+
+    .logo {
+        width: 100px;
+        justify-self: end;
+    }
+}
+
+.optionProfile {
+    color: #ff7118;
+    background-color: inherit;
+    border: 1px solid black;
+    transition: color 0.3s ease;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 10px;
+
+    &:hover {
+        color: #ff5e00;
+        transform: scale(1.1);
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+.bg {
+    /*Poner un div con esta clase para poder determinar la altura de manera fija*/
+    background-color: #fff;
+    width: 100vw;
+    height: 80vh;
+}
+
+.masterBody {
+    /*Con esta clase la altura no es fija y se puede alargar*/
+    display: contents;
+    min-height: 80vh;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    min-height: 70px;
+    color: white;
+    flex-wrap: wrap;
+
+    #footerHome {
+        padding: 10px;
+        color: #ff7118;
+        transition: color 0.3s ease;
+
+        /* Transición de color */
+        &:hover {
+            color: #ff5e00;
+            /* Color diferente al pasar el ratón */
+            transform: scale(1.1);
+
+            &:active {
+                transform: scale(0.9);
+                /* Animación de escala al hacer clic */
+            }
+        }
+    }
+}
+
+/*BOTONES*/
+
+.btn {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 2%;
+
+    &-blue {
+        background-color: #007bff;
+        color: #fff;
+
+        &:hover {
+            background-color: #0056b3;
+            /* Cambia el color de fondo al pasar el mouse */
+            color: #fff;
+            /* Cambia el color del texto al pasar el mouse */
+        }
+    }
+
+    &-icon {
+        background-color: inherit;
+        height: fit-content;
+        border: 0;
+        border-radius: 20%;
+        margin-left: -42px;
+        padding: 5px;
+        vertical-align: middle;
+
+        &:hover {
+            background-color: white;
+        }
+    }
+
+    &-orange {
+        color: #000;
+        background-color: #ff5e00;
+        font-size: 13px;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #f2ab7e;
+        }
+
+        &:active {
+            background-color: #ff5e00;
+        }
+    }
+
+    &-red {
+        background-color: #c40c0c;
+        /* Rojo */
+        color: #fff;
+
+        &:hover {
+            background-color: #880815;
+        }
+    }
+}
+
+.button-container {
+    display: grid;
+    text-align: center;
+    margin: 10%;
+    grid-gap: 20%;
+    grid-template-columns: auto auto auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+
+    /* Distribuye el espacio disponible alrededor de los botones */
+    a {
+        color: #000;
+        display: flex;
+        padding: 5px;
+        margin: 5px;
+        align-items: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        position: relative;
+
+        & :hover {
+            background-color: #f0f0f0;
+        }
+
+        svg {
+            color: #000;
+        }
+
+        &:hover::after {
+            content: attr(title);
+            /* Muestra el texto del atributo title como contenido del tooltip */
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-15%);
+            padding: 8px;
+            background-color: #333;
+            color: #fff;
+            font-size: 14px;
+            z-index: 1;
+            white-space: nowrap;
+            opacity: 1;
+        }
+    }
+}
+
+.event {
+    &-home {
+        display: grid;
+        grid-template-areas:
+            "a a a"
+            "b1 b2 b3"
+            "c c c";
+        padding: 10px;
+        justify-content: space-evenly;
+        justify-items: end;
+        gap: 50px;
+
+        h2 {
+            grid-area: a;
+            justify-self: center;
+        }
+    }
+
+    &-card {
+        grid-area: b;
+        display: flex;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        background-color: white;
+        /* Color de fondo */
+        border-radius: 10px;
+        /* Bordes redondeados */
+        flex: 1;
+        height: 150px;
+        margin: 10px;
+        border: 1px solid black;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Sombra suave */
+        transition: transform 0.3s ease;
+        position: relative;
+        z-index: 0;
+        /* Valor por defecto para la tarjeta */
+
+        /* Transición de la propiedad transform */
+        &:hover {
+            transform: scale(1.025);
+            /* Ampliación al pasar el ratón */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            /* Sombra más pronunciada al pasar el ratón */
+        }
+
+        img {
+            display: flex;
+            justify-content: left;
+            max-width: 35%;
+            height: auto;
+            object-fit: cover;
+            margin: 15px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    }
+
+    &-form {
+        display: contents;
+    }
+
+    &-group {
+        grid-area: c;
+        justify-items: end;
+    }
+
+    &-btn {
+        color: #000;
+        border: none;
+        border-radius: 5px;
+        margin: 0px;
+        padding: 5px;
+        font-weight: 700;
+        font-size: 17px;
+        transition: color 0.3s ease;
+        background-color: inherit;
+
+        &:hover {
+            background-color: #fefefe;
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+
+    &-link {
+        color: black;
+        text-decoration: none;
+        height: 150px;
+    }
+
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+        /* Mínimo 300px, máximo 1 fracción del contenedor */
+        justify-content: center;
+        gap: 5%;
+        /* Espacio entre tarjetas */
+        height: 80%;
+        padding: 10px;
+    }
+
+    &-details {
+        flex: 1;
+        padding: 15px;
+        height: 100%;
+
+        h1 {
+            font-weight: bolder;
+            font-size: 20px;
+            margin: 0;
+            margin-bottom: 4%;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 19px;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        h4 {
+            margin: 0;
+            font-size: 15px;
+        }
+    }
+
+    &-imagen {
+        width: 100%;
+        max-height: 50%;
+    }
+}
+
+.entrada {
+    &-lista {
+        margin-bottom: 5%;
+        display: grid;
+        grid-template-columns: 1fr 0.3fr;
+        align-items: center;
+        border: 1px solid;
+        padding-left: 14px;
+        padding-right: 14px;
+        border-radius: 10px;
+
+        p {
+            font-size: 17px;
+        }
+    }
+}
+
+.ticket {
+    &-compra {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        justify-items: center;
+        border: 1px solid #ccc;
+    }
+
+    &-datos {
+        max-width: 600px;
+        margin: auto;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1.7px solid darkgray;
+        border-radius: 6px;
+        padding: 5%;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        align-content: space-evenly;
+        min-height: 75vh;
+    }
+
+    &-tabla {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &-error {
+        background-color: #ffb3b3;
+        padding: 5px;
+        padding-left: 20px;
+        margin: 10px 0;
+        border: 1px solid #e74c3c;
+        border-radius: 5px;
+        height: max-content;
+        width: calc(100% - 41px);
+    }
+    &-verdad {
+        padding: 5%;
+        background-color: #c1ffb3;
+        padding: 5px;
+        padding-left: 20px;
+        margin: 10px 0;
+        border: 1px solid #8a9986;
+        border-radius: 5px;
+        height: max-content;
+        width: calc(100% - 41px);
+    }
+}
+#valorTicket {
+    margin: 2%;
+    width: max-content;
+    align-self: center;
+    justify-items: center;
+    p {
+        width: 40vw;
+        margin-left: 10px;
+    }
+}
+.resumenCompra {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1.7px solid darkgray;
+    border-radius: 6px;
+    padding: 5%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 3%;
+}
+
+.ahref {
+    border: none;
+    width: min-content;
+    margin: 0px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    background-color: inherit;
+    color: #ff7118;
+    transition: color 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+        color: #ff5e00;
+        transform: scale(1.1);
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+/*Estilos para la pantalla Home*/
+.container {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    top: 0;
+    grid-template-areas: "a a a a a b b b b b b c";
+}
+
+.form {
+    margin: 0px;
+
+    &-filtre {
+        grid-area: a;
+        text-align: end;
+    }
+
+    &-cerca {
+        grid-area: b;
+        text-align: start;
+    }
+
+    &-promotores {
+        display: grid;
+        grid-area: c;
+        width: fit-content;
+    }
+}
+
+#event-form {
+    display: contents;
+    justify-items: end;
+}
+
+.filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
+    .icon-container {
+        height: 100%;
+        position: absolute;
+        top: 25%;
+        right: 10px;
+        pointer-events: none;
+    }
+}
+
+option {
+    font-size: 16px;
+}
+
+.form-control {
+    border: 1px solid #000;
+    background-color: #efefef;
+    padding: 8px;
+}
+
+select[class="form-control"] {
+    appearance: none;
+    width: 40%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    box-shadow: 3px 2px 7px gray;
+    height: 32px;
+}
+
+input[class="form-control"] {
+    width: 75%;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 3px 2px 7px gray;
+    height: 15px;
+}
+
+.pagination .page-link.small {
+    font-size: 3em;
+    /* Ajusta el tamaño del texto */
+    padding: 0.25rem 0.5rem;
+    /* Ajusta el relleno para hacer más compacto */
+}
+
+/* Estilo para la paginación */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    li {
+        list-style: none;
+        margin: 0 5px;
+    }
+
+    a {
+        color: #3498db;
+        text-decoration: none;
+        padding: 8px 12px;
+        border: 1px solid #3498db;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+    }
+}
+
+/* Estilo para el enlace de la página activa */
+.pagination .active a,
+.pagination .active span {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #3498db;
+    border-radius: 4px;
+}
+
+/* Estilo para los botones de cambio de página (anterior y siguiente) */
+.pagination .prev,
+.pagination .next {
+    color: #3498db;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para los botones de cambio de página al pasar el ratón */
+.pagination .prev:hover,
+.pagination .next:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Estilo para el texto de la paginación */
+.pagination span {
+    display: block;
+    padding: 8px 12px;
+}
+
+.pagination .disabled span,
+.pagination .disabled a {
+    color: #ddd;
+    pointer-events: none;
+    /* Esto evita que se hagan clics en botones deshabilitados */
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.pag {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+}
+
+/*Estilos para la pantalla del login*/
+
+.login {
+    background-color: #dcd;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-div {
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        width: 20%;
+        border: 1.7px solid darkgray;
+        border-radius: 6px;
+        padding: 5%;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+        h2 {
+            margin: 0px;
+            margin-bottom: 10%;
+        }
+
+        .login-form {
+            display: contents;
+        }
+    }
+}
+
+.login-input {
+    justify-items: start;
+
+    input {
+        background-color: lightgray;
+        width: 100%;
+        height: 3vh;
+        border: 0px solid;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding: 5px;
+
+        &::placeholder {
+            color: black;
+        }
+    }
+}
+
+a {
+    color: #072591;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Estilos para el contenido del formulario */
+#content-container {
+    background-color: #dcd;
+    padding: 50px;
+}
+
+.addEvent {
+    max-width: 600px;
+    margin: auto;
+    min-height: 100vh;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1.7px solid darkgray;
+    border-radius: 6px;
+    padding: 5%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-controller,
+.form-select {
+    width: calc(100% - 16px); // Resta el doble del relleno (8px a cada lado)
+    max-width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #474747;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Configuración específica para el textarea */
+.form-controller[type="textarea"] {
+    max-height: 300px;
+    /* Ajusta según tu preferencia */
+    overflow-y: auto;
+    /* Agrega una barra de desplazamiento vertical si es necesario */
+    resize: vertical;
+}
+
+/* Estilos para la sección de nueva dirección */
+#nousCamps {
+    display: none;
+    margin-top: 20px;
+}
+
+#cancelarBoto {
+    display: none;
+    margin-top: 10px;
+}
+
+.errorDiv {
+    display: none;
+    background-color: #ffb3b3;
+    /* Color de fondo rojo claro */
+    padding: 10px;
+    /* Añadir relleno */
+    margin: 10px 0;
+    /* Añadir margen arriba y abajo */
+    border: 1px solid #e74c3c;
+    /* Añadir borde rojo oscuro */
+    border-radius: 5px;
+    /* Añadir bordes redondeados */
+}
+
+.alertDiv {
+    background-color: #ffb3b3;
+    /* Color de fondo rojo claro */
+    padding: 10px;
+    /* Añadir relleno */
+    margin: 10px 0;
+    /* Añadir margen arriba y abajo */
+    border: 1px solid #e74c3c;
+    /* Añadir borde rojo oscuro */
+    border-radius: 5px;
+    /* Añadir bordes redondeados */
+}
+
+.msg {
+    &-valido {
+        background-color: limegreen;
+        padding: 10px;
+        color: black;
+        margin: 20px;
+    }
+
+    &-error {
+        background-color: #980000;
+        padding: 10px;
+        color: white;
+        margin: 20px;
+    }
+}
+
+.tipo-entrada {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    /* Línea horizontal entre entradas */
+    padding-bottom: 10px;
+
+    /* Espaciado para mejorar la estética */
+    label {
+        display: block;
+        margin-bottom: 5px;
+        /* Espai entre les etiquetes i els inputs */
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+}
+
+/*Ver Eventos inicio*/
+
+.containerEvent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-items: center;
+    margin: 20px;
+}
+
+.infoEvent {
+    display: grid;
+    grid-column: 1/3;
+    align-items: center;
+    justify-content: center;
+}
+
+.textEvent {
+    margin: 5%;
+    display: grid;
+    grid-column: 1/2;
+    justify-items: center;
+
+    .btn {
+        &-entrada {
+            height: fit-content;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+
+    .detallesLocal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-self: start;
+        justify-items: end;
+    }
+    .añadirTickets {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        margin-top: 6%;
+        margin-bottom: 8%;
+        justify-items: start;
+    }
+    .tiposTickets {
+        width: calc(
+            100% - 16px
+        ); // Resta el doble del relleno (8px a cada lado)
+        max-width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #474747;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6%;
+        margin-bottom: 10%;
+    }
+    .espacioEventos {
+        margin-top: 6%;
+    }
+    #precioTotal {
+        justify-self: start;
+    }
+    .DivsConBotonesDerecho {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: baseline;
+        justify-items: center;
+    }
+
+    .ComprarEntrada {
+        #fechaSesion {
+            margin-bottom: 10%;
+        }
+    }
+
+    .form-label {
+        margin-bottom: 0px;
+    }
+
+    #cantidad {
+        border: 1px solid;
+    }
+}
+
+.inlineDiv {
+    display: grid;
+    grid-template-columns: 1fr 0.93fr;
+    align-items: baseline;
+}
+
+.imagenesEventos {
+    margin: 5%;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    margin: 30px;
+    text-align: center;
+}
+
+.mySlides {
+    width: 100%; /* Ensure the image takes full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: fill;
+}
+
+.left-button,
+.right-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.5
+    ); /* Adjust background color as desired */
+    color: white; /* Adjust text color as desired */
+    padding: 10px 15px; /* Adjust padding as desired */
+    border: none;
+    cursor: pointer;
+}
+
+.left-button:hover,
+.right-button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo en hover */
+    color: #ffffff; /* Color de texto en hover */
+}
+
+.left-button {
+    left: 0;
+}
+
+.right-button {
+    right: 0;
+}
+
+#imagenEvento {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*Pantalla Home Promotor*/
+
+/* Estilos para el mensaje informativo */
+.info {
+    &-message {
+        background-color: #ff7118;
+        color: white;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    &-text {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    &-alert {
+        font-size: 24px;
+        color: white;
+        /* Puedes ajustar el color según tus preferencias */
+        background-color: #fe8336;
+        /* Puedes ajustar el color según tus preferencias */
+        padding: 20px;
+        border-radius: 8px;
+        font-weight: bold;
+        /* Puedes ajustar el color según tus preferencias */
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+.center-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/*Estilos del div donde se visualizan las fechas para poder editarlas*/
+#fechaDiv {
+    display: grid;
+    grid-template-columns: auto;
+    max-width: 200px;
+    border: 1px solid;
+    justify-items: end;
+
+    button {
+        border: none;
+        background-color: inherit;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .fecha {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+
+        button {
+            width: fit-content;
+            height: fit-content;
+            border: none;
+            background-color: inherit;
+
+            &:hover {
+                background-color: #dcd;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+.SessionEditar {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+.estadoSesion {
+    border-radius: 5px;
+    position: relative;
+}
+
+#fechaButton {
+    margin-bottom: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: inherit;
+}
+
+.star-rating {
+    font-size: 3rem;
+    /* Ajusta el tamaño de las estrellas según sea necesario */
+}
+
+.star {
+    cursor: pointer;
+    transition: color 0.2s;
+    color: #969696;
+    /* Color de las estrellas no seleccionadas */
+}
+
+.star.selected {
+    color: gold;
+}
+
+.star.hover {
+    color: gold;
+}
+
+.emoji-selector {
+    font-size: 3rem;
+}
+
+.emoji-option {
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.emoji-option:not(.selected) {
+    opacity: 0.5;
+}
+
+.emoji-option:hover:not(.selected) {
+    opacity: 1;
+}
+
+.opinion-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas de igual tamaño */
+    gap: 40px;
+    /* Espaciado entre las columnas */
+    margin: 50px;
+    /* Espaciado entre tarjetas */
+}
+
+.opinion-card {
+    background-color: #ffffff;
+    /* Color de fondo de la tarjeta */
+    border: 1px solid #dddddd;
+    /* Borde de la tarjeta */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    padding: 15px;
+    /* Espaciado interno de la tarjeta */
+    /* Espaciado interno de la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra de la tarjeta */
+}
+
+.footer-button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*Ver Eventos fin*/
+@media screen and (max-width: 300px) {
+    .titulo {
+        font-size: 25px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .login-input > input {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .event {
+        &-card {
+            margin: 10px;
+            width: 350px;
+            height: 200px;
+        }
+
+        &-link {
+            margin: 10px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .containerEvent {
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    .textEvent {
+        grid-column: 1/3;
+    }
+
+    .event {
+        &-details p {
+            margin: 0;
+
+            &:nth-of-type(1) {
+                font-weight: bolder;
+                font-size: 20px;
+                margin-bottom: 4%;
+            }
+
+            &:nth-of-type(2) {
+                font-size: 19px;
+            }
+
+            &:nth-of-type(3) {
+                font-size: 19px;
+            }
+
+            &:nth-of-type(4) {
+                font-size: 19px;
+            }
+        }
+    }
+
+    .linkPromotor {
+        font-weight: 800;
+        font-size: 13px;
+    }
+
+    .optionsBar {
+        display: none;
+    }
+
+    select[class="form-control"] {
+        height: 32px;
+    }
+
+    .button-container {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    
+
+    select[class="form-control"] {
+        width: 90%;
+    }
+
+    input[class="form-control"] {
+        width: 80%;
+    }
+
+    .login-div {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1287px) {
+    .event-cards {
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .event {
+        &-home {
+            grid-template-areas:
+                "a"
+                "b1"
+                "b2"
+                "b3"
+                "c";
+        }
+    }
+}
+
+@media screen and (max-width: 1287px) {
+    .event-cards {
+        overflow-y: auto;
+        gap: 50px;
+    }
+}

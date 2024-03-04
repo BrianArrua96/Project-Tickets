@@ -1,0 +1,79 @@
+Sigue estos pasos para instalar y configurar correctamente nuestra aplicación.
+
+
+=== Aplicaciones necesarias
+
+Asegúrate de contar con las siguientes herramientas instaladas en tu sistema antes de proceder con la instalación de nuestra aplicación:
+
+- GIT
+- PHP (recomendamos la v8.2)
+- Composer
+- Docker
+- NodeJS
+
+En el archivo php.ini descomentar las extensiones:
+
+- extension=gd
+- extension=pgsql
+
+=== Guía de la instalación
+
+==== Clonado del repositorio y configuración inicial
+
+Realice el git clone con el siguiente comando 
+[source,sh]
+----
+git clone https://git.copernic.cat/arrua.dominguez.brian.tobias/gr6-arrua-galindo-jumelle.git
+----
+
+Luego de que se haya clonado sin problemas coloquese en la carpeta site y realice lo siguiente
+
+[source, sh]
+----
+composer install
+copy .env.example .env
+php artisan key:generate
+npm install fullcalendar fullcalendar-scheduler
+----
+
+==== Configuración de Docker
+
+A posteriori coloquese en la carpeta docker para poder realizar:
+
+[source, sh]
+----
+cd ../docker
+docker composer up
+----
+
+==== Configuración de la base de datos
+
+Si se creo el contenedor sin problemas ya puede empezar a crear la base de datos necesaria para la app
+
+[source, sh]
+----
+cd ../site
+php artisan migrate
+php artisan db:seed --class=CategoriesTableSeeder
+----
+
+Con esto la base de datos se habrá creado correctamente y con ello creado las tablas necesarias, y con el último compando habrás creado unas columnas de categorias para tus eventos. 
+
+==== Creación de usuarios (opcional)
+
+Si deseas tener unos usuarios, como por el momento no hay manera de registrarse, se pueden crear con 
+
+[source, sh]
+----
+php artisan db:seed --class=UsersTableSeeder
+----
+
+==== Listo para usar
+
+Ahora la aplicación está lista para ser utilizada. Accede a ella desde tu navegador web con
+
+[source, sh]
+----
+php artisan serve
+----
+y comienza a disfrutar de sus funcionalidades.

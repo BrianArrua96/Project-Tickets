@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for C:\Users\alexg\OneDrive\Documentos\Projecte 2\gr6-arrua-galindo-jumelle\site\app\rest_API_PHP\ApiRedsysREST</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../_css/bootstrap.min.css?v=10.1.11" rel="stylesheet" type="text/css">
+  <link href="../../_css/nv.d3.min.css?v=10.1.11" rel="stylesheet" type="text/css">
+  <link href="../../_css/style.css?v=10.1.11" rel="stylesheet" type="text/css">
+  <link href="../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../index.html">C:\Users\alexg\OneDrive\Documentos\Projecte 2\gr6-arrua-galindo-jumelle\site\app</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">rest_API_PHP</a></li>
+         <li class="breadcrumb-item"><a href="index.html">ApiRedsysREST</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Constants/RESTConstants.php.html#3">RESTConstants</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/RESTGenericXml.php.html#5">RESTGenericXml</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#8">RESTOperationElement</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#9">RESTAuthenticationRequestMessage</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCConfirmationMessage.php.html#9">RESTDCCConfirmationMessage</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCElement.php.html#8">RESTDCCElement</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCResponseMessage.php.html#10">RESTDCCResponseMessage</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#10">RESTInitialRequestMessage</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#10">RESTOperationMessage</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#10">RESTResponseMessage</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Impl/RESTAuthenticationRequestService.php.html#9">RESTAuthenticationRequestService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Impl/RESTDCCConfirmationService.php.html#11">RESTDCCConfirmationService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Impl/RESTInitialRequestService.php.html#14">RESTInitialRequestService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Impl/RESTOperationService.php.html#13">RESTOperationService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/RESTService.php.html#7">RESTService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTAnnotation.php.html#3">RESTAnnotation</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#24">RESTLogger</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#25">RESTSignatureUtils</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#8">RESTOperationElement</a></td><td class="text-right">6480</td></tr>
+       <tr><td><a href="Model/RESTGenericXml.php.html#5">RESTGenericXml</a></td><td class="text-right">2550</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#10">RESTOperationMessage</a></td><td class="text-right">2550</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#10">RESTInitialRequestMessage</a></td><td class="text-right">2450</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#9">RESTAuthenticationRequestMessage</a></td><td class="text-right">1806</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#10">RESTResponseMessage</a></td><td class="text-right">1560</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#24">RESTLogger</a></td><td class="text-right">1122</td></tr>
+       <tr><td><a href="Service/Impl/RESTOperationService.php.html#13">RESTOperationService</a></td><td class="text-right">756</td></tr>
+       <tr><td><a href="Service/Impl/RESTDCCConfirmationService.php.html#11">RESTDCCConfirmationService</a></td><td class="text-right">600</td></tr>
+       <tr><td><a href="Service/Impl/RESTAuthenticationRequestService.php.html#9">RESTAuthenticationRequestService</a></td><td class="text-right">420</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#25">RESTSignatureUtils</a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="Service/RESTService.php.html#7">RESTService</a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="Service/Impl/RESTInitialRequestService.php.html#14">RESTInitialRequestService</a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="Constants/RESTConstants.php.html#3">RESTConstants</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Utils/RESTAnnotation.php.html#3">RESTAnnotation</a></td><td class="text-right">30</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Constants/RESTConstants.php.html#208"><abbr title="RESTConstants::getJSPath">getJSPath</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Constants/RESTConstants.php.html#218"><abbr title="RESTConstants::getEnviromentEndpoint">getEnviromentEndpoint</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/RESTGenericXml.php.html#7"><abbr title="RESTGenericXml::setPropertyValue">setPropertyValue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/RESTGenericXml.php.html#15"><abbr title="RESTGenericXml::getPropertyValue">getPropertyValue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/RESTGenericXml.php.html#27"><abbr title="RESTGenericXml::getTagContent">getTagContent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/RESTGenericXml.php.html#44"><abbr title="RESTGenericXml::parseXml">parseXml</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/RESTGenericXml.php.html#78"><abbr title="RESTGenericXml::toXml">toXml</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/RESTGenericXml.php.html#121"><abbr title="RESTGenericXml::toJson">toJson</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/RESTGenericXml.php.html#129"><abbr title="RESTGenericXml::toJsonWithArray">toJsonWithArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/RESTGenericXml.php.html#171"><abbr title="RESTGenericXml::parseJson">parseJson</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#145"><abbr title="RESTOperationElement::getAmount">getAmount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#148"><abbr title="RESTOperationElement::setAmount">setAmount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#154"><abbr title="RESTOperationElement::getCurrency">getCurrency</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#157"><abbr title="RESTOperationElement::setCurrency">setCurrency</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#163"><abbr title="RESTOperationElement::getOrder">getOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#166"><abbr title="RESTOperationElement::setOrder">setOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#172"><abbr title="RESTOperationElement::getSignature">getSignature</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#175"><abbr title="RESTOperationElement::setSignature">setSignature</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#180"><abbr title="RESTOperationElement::getMerchant">getMerchant</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#183"><abbr title="RESTOperationElement::setMerchant">setMerchant</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#189"><abbr title="RESTOperationElement::getTerminal">getTerminal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#192"><abbr title="RESTOperationElement::setTerminal">setTerminal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#198"><abbr title="RESTOperationElement::getResponseCode">getResponseCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#201"><abbr title="RESTOperationElement::setResponseCode">setResponseCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#207"><abbr title="RESTOperationElement::getAuthCode">getAuthCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#210"><abbr title="RESTOperationElement::setAuthCode">setAuthCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#216"><abbr title="RESTOperationElement::getTransactionType">getTransactionType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#219"><abbr title="RESTOperationElement::setTransactionType">setTransactionType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#225"><abbr title="RESTOperationElement::getSecurePayment">getSecurePayment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#228"><abbr title="RESTOperationElement::setSecurePayment">setSecurePayment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#234"><abbr title="RESTOperationElement::getLanguage">getLanguage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#237"><abbr title="RESTOperationElement::setLanguage">setLanguage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#243"><abbr title="RESTOperationElement::getMerchantData">getMerchantData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#246"><abbr title="RESTOperationElement::setMerchantData">setMerchantData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#252"><abbr title="RESTOperationElement::getCardCountry">getCardCountry</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#255"><abbr title="RESTOperationElement::setCardCountry">setCardCountry</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#261"><abbr title="RESTOperationElement::getCardNumber">getCardNumber</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#264"><abbr title="RESTOperationElement::setCardNumber">setCardNumber</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#270"><abbr title="RESTOperationElement::getCardBrand">getCardBrand</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#273"><abbr title="RESTOperationElement::setCardBrand">setCardBrand</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#279"><abbr title="RESTOperationElement::getCardType">getCardType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#282"><abbr title="RESTOperationElement::setCardType">setCardType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#288"><abbr title="RESTOperationElement::getExpiryDate">getExpiryDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#291"><abbr title="RESTOperationElement::setExpiryDate">setExpiryDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#297"><abbr title="RESTOperationElement::getMerchantIdentifier">getMerchantIdentifier</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#300"><abbr title="RESTOperationElement::setMerchantIdentifier">setMerchantIdentifier</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#306"><abbr title="RESTOperationElement::getPsd2">getPsd2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#310"><abbr title="RESTOperationElement::setPsd2">setPsd2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#316"><abbr title="RESTOperationElement::getExemption">getExemption</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#320"><abbr title="RESTOperationElement::setExemption">setExemption</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#326"><abbr title="RESTOperationElement::getCof">getCof</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#330"><abbr title="RESTOperationElement::setCof">setCof</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#336"><abbr title="RESTOperationElement::getEmv">getEmv</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#342"><abbr title="RESTOperationElement::setEmv">setEmv</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#348"><abbr title="RESTOperationElement::getCofTxnid">getCofTxnid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#351"><abbr title="RESTOperationElement::setCofTxnid">setCofTxnid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#356"><abbr title="RESTOperationElement::getDcc">getDcc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#359"><abbr title="RESTOperationElement::setDcc">setDcc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#364"><abbr title="RESTOperationElement::getInfoMonedaTarjeta">getInfoMonedaTarjeta</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#367"><abbr title="RESTOperationElement::setInfoMonedaTarjeta">setInfoMonedaTarjeta</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#372"><abbr title="RESTOperationElement::getThreeDSInfo">getThreeDSInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#382"><abbr title="RESTOperationElement::setThreeDSInfo">setThreeDSInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#387"><abbr title="RESTOperationElement::getProtocolVersion">getProtocolVersion</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#396"><abbr title="RESTOperationElement::setProtocolVersion">setProtocolVersion</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#404"><abbr title="RESTOperationElement::getAcsUrl">getAcsUrl</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#414"><abbr title="RESTOperationElement::getPaRequest">getPaRequest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#423"><abbr title="RESTOperationElement::getAutSession">getAutSession</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#433"><abbr title="RESTOperationElement::requires3DS1">requires3DS1</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#438"><abbr title="RESTOperationElement::requires3DS2">requires3DS2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#448"><abbr title="RESTOperationElement::isPSD2">isPSD2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#465"><abbr title="RESTOperationElement::requiresSCA">requiresSCA</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#479"><abbr title="RESTOperationElement::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#85"><abbr title="RESTAuthenticationRequestMessage::getMerchant">getMerchant</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#88"><abbr title="RESTAuthenticationRequestMessage::setMerchant">setMerchant</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#94"><abbr title="RESTAuthenticationRequestMessage::getTerminal">getTerminal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#97"><abbr title="RESTAuthenticationRequestMessage::setTerminal">setTerminal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#103"><abbr title="RESTAuthenticationRequestMessage::getOrder">getOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#106"><abbr title="RESTAuthenticationRequestMessage::setOrder">setOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#112"><abbr title="RESTAuthenticationRequestMessage::getOperID">getOperID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#115"><abbr title="RESTAuthenticationRequestMessage::setOperID">setOperID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#121"><abbr title="RESTAuthenticationRequestMessage::getTransactionType">getTransactionType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#124"><abbr title="RESTAuthenticationRequestMessage::setTransactionType">setTransactionType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#130"><abbr title="RESTAuthenticationRequestMessage::getCurrency">getCurrency</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#133"><abbr title="RESTAuthenticationRequestMessage::setCurrency">setCurrency</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#139"><abbr title="RESTAuthenticationRequestMessage::getAmount">getAmount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#142"><abbr title="RESTAuthenticationRequestMessage::setAmount">setAmount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#148"><abbr title="RESTAuthenticationRequestMessage::getCardNumber">getCardNumber</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#151"><abbr title="RESTAuthenticationRequestMessage::setCardNumber">setCardNumber</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#156"><abbr title="RESTAuthenticationRequestMessage::getCardExpiryDate">getCardExpiryDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#159"><abbr title="RESTAuthenticationRequestMessage::setCardExpiryDate">setCardExpiryDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#164"><abbr title="RESTAuthenticationRequestMessage::getCvv2">getCvv2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#167"><abbr title="RESTAuthenticationRequestMessage::setCvv2">setCvv2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#172"><abbr title="RESTAuthenticationRequestMessage::getParameters">getParameters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#175"><abbr title="RESTAuthenticationRequestMessage::addParameter">addParameter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#180"><abbr title="RESTAuthenticationRequestMessage::getEmv">getEmv</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#186"><abbr title="RESTAuthenticationRequestMessage::setEmv">setEmv</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#191"><abbr title="RESTAuthenticationRequestMessage::getDCC">getDCC</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#197"><abbr title="RESTAuthenticationRequestMessage::setDCC">setDCC</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#207"><abbr title="RESTAuthenticationRequestMessage::createReference">createReference</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#215"><abbr title="RESTAuthenticationRequestMessage::useReference">useReference</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#222"><abbr title="RESTAuthenticationRequestMessage::addEmvParameters">addEmvParameters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#233"><abbr title="RESTAuthenticationRequestMessage::addEmvParameter">addEmvParameter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#243"><abbr title="RESTAuthenticationRequestMessage::addDCCParameter">addDCCParameter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#254"><abbr title="RESTAuthenticationRequestMessage::setCOFOperation">setCOFOperation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#263"><abbr title="RESTAuthenticationRequestMessage::setCOFTxnid">setCOFTxnid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#270"><abbr title="RESTAuthenticationRequestMessage::demandDccinfo">demandDccinfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#279"><abbr title="RESTAuthenticationRequestMessage::challengeRequestV1">challengeRequestV1</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#291"><abbr title="RESTAuthenticationRequestMessage::challengeRequestV2">challengeRequestV2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCConfirmationMessage.php.html#35"><abbr title="RESTDCCConfirmationMessage::getOrder">getOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCConfirmationMessage.php.html#38"><abbr title="RESTDCCConfirmationMessage::setOrder">setOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCConfirmationMessage.php.html#42"><abbr title="RESTDCCConfirmationMessage::getMerchant">getMerchant</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCConfirmationMessage.php.html#45"><abbr title="RESTDCCConfirmationMessage::setMerchant">setMerchant</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCConfirmationMessage.php.html#49"><abbr title="RESTDCCConfirmationMessage::getTerminal">getTerminal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCConfirmationMessage.php.html#52"><abbr title="RESTDCCConfirmationMessage::setTerminal">setTerminal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCConfirmationMessage.php.html#56"><abbr title="RESTDCCConfirmationMessage::getCurrencyCode">getCurrencyCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCConfirmationMessage.php.html#59"><abbr title="RESTDCCConfirmationMessage::setCurrencyCode">setCurrencyCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCConfirmationMessage.php.html#63"><abbr title="RESTDCCConfirmationMessage::getSesion">getSesion</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCConfirmationMessage.php.html#66"><abbr title="RESTDCCConfirmationMessage::setSesion">setSesion</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCConfirmationMessage.php.html#70"><abbr title="RESTDCCConfirmationMessage::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCElement.php.html#43"><abbr title="RESTDCCElement::getCurrency">getCurrency</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCElement.php.html#46"><abbr title="RESTDCCElement::setCurrency">setCurrency</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCElement.php.html#50"><abbr title="RESTDCCElement::getCurrencyString">getCurrencyString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCElement.php.html#53"><abbr title="RESTDCCElement::setCurrencyString">setCurrencyString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCElement.php.html#57"><abbr title="RESTDCCElement::getCurrencyCode">getCurrencyCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCElement.php.html#60"><abbr title="RESTDCCElement::setCurrencyCode">setCurrencyCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCElement.php.html#64"><abbr title="RESTDCCElement::getChangeRate">getChangeRate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCElement.php.html#67"><abbr title="RESTDCCElement::setChangeRate">setChangeRate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCElement.php.html#71"><abbr title="RESTDCCElement::getChangeDate">getChangeDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCElement.php.html#74"><abbr title="RESTDCCElement::setChangeDate">setChangeDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCElement.php.html#78"><abbr title="RESTDCCElement::getChecked">getChecked</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCElement.php.html#81"><abbr title="RESTDCCElement::setChecked">setChecked</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCElement.php.html#85"><abbr title="RESTDCCElement::getAmount">getAmount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCElement.php.html#88"><abbr title="RESTDCCElement::setAmount">setAmount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCElement.php.html#92"><abbr title="RESTDCCElement::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCResponseMessage.php.html#42"><abbr title="RESTDCCResponseMessage::getResult">getResult</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCResponseMessage.php.html#45"><abbr title="RESTDCCResponseMessage::setResult">setResult</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCResponseMessage.php.html#49"><abbr title="RESTDCCResponseMessage::getApiCode">getApiCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCResponseMessage.php.html#52"><abbr title="RESTDCCResponseMessage::setApiCode">setApiCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCResponseMessage.php.html#56"><abbr title="RESTDCCResponseMessage::getDcc0">getDcc0</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCResponseMessage.php.html#59"><abbr title="RESTDCCResponseMessage::setDcc0">setDcc0</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCResponseMessage.php.html#63"><abbr title="RESTDCCResponseMessage::getDcc1">getDcc1</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCResponseMessage.php.html#66"><abbr title="RESTDCCResponseMessage::setDcc1">setDcc1</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCResponseMessage.php.html#70"><abbr title="RESTDCCResponseMessage::getDccMargin">getDccMargin</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCResponseMessage.php.html#73"><abbr title="RESTDCCResponseMessage::setDccMargin">setDccMargin</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCResponseMessage.php.html#77"><abbr title="RESTDCCResponseMessage::getBankName">getBankName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCResponseMessage.php.html#80"><abbr title="RESTDCCResponseMessage::setBankName">setBankName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCResponseMessage.php.html#84"><abbr title="RESTDCCResponseMessage::getSesion">getSesion</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCResponseMessage.php.html#87"><abbr title="RESTDCCResponseMessage::setSesion">setSesion</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTDCCResponseMessage.php.html#91"><abbr title="RESTDCCResponseMessage::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#127"><abbr title="RESTInitialRequestMessage::getMerchant">getMerchant</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#135"><abbr title="RESTInitialRequestMessage::setMerchant">setMerchant</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#147"><abbr title="RESTInitialRequestMessage::getTerminal">getTerminal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#155"><abbr title="RESTInitialRequestMessage::setTerminal">setTerminal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#167"><abbr title="RESTInitialRequestMessage::getOrder">getOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#175"><abbr title="RESTInitialRequestMessage::setOrder">setOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#187"><abbr title="RESTInitialRequestMessage::getOperID">getOperID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#195"><abbr title="RESTInitialRequestMessage::setOperID">setOperID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#207"><abbr title="RESTInitialRequestMessage::getTransactionType">getTransactionType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#215"><abbr title="RESTInitialRequestMessage::setTransactionType">setTransactionType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#227"><abbr title="RESTInitialRequestMessage::getCurrency">getCurrency</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#235"><abbr title="RESTInitialRequestMessage::setCurrency">setCurrency</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#247"><abbr title="RESTInitialRequestMessage::getAmount">getAmount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#255"><abbr title="RESTInitialRequestMessage::setAmount">setAmount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#266"><abbr title="RESTInitialRequestMessage::getDcc">getDcc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#272"><abbr title="RESTInitialRequestMessage::setDcc">setDcc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#282"><abbr title="RESTInitialRequestMessage::getParameters">getParameters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#289"><abbr title="RESTInitialRequestMessage::addParameter">addParameter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#300"><abbr title="RESTInitialRequestMessage::getEmv">getEmv</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#312"><abbr title="RESTInitialRequestMessage::setEmv">setEmv</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#323"><abbr title="RESTInitialRequestMessage::getCardNumber">getCardNumber</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#330"><abbr title="RESTInitialRequestMessage::setCardNumber">setCardNumber</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#340"><abbr title="RESTInitialRequestMessage::getCardExpiryDate">getCardExpiryDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#347"><abbr title="RESTInitialRequestMessage::setCardExpiryDate">setCardExpiryDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#356"><abbr title="RESTInitialRequestMessage::getCvv2">getCvv2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#363"><abbr title="RESTInitialRequestMessage::setCvv2">setCvv2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#374"><abbr title="RESTInitialRequestMessage::createReference">createReference</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#382"><abbr title="RESTInitialRequestMessage::useReference">useReference</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#386"><abbr title="RESTInitialRequestMessage::addEmvParameters">addEmvParameters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#394"><abbr title="RESTInitialRequestMessage::addEmvParameter">addEmvParameter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#405"><abbr title="RESTInitialRequestMessage::demandCardData">demandCardData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#412"><abbr title="RESTInitialRequestMessage::demandExemptionInfo">demandExemptionInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#419"><abbr title="RESTInitialRequestMessage::setCOFOperation">setCOFOperation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#427"><abbr title="RESTInitialRequestMessage::setCOFTxnid">setCOFTxnid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#434"><abbr title="RESTInitialRequestMessage::demandDCCinfo">demandDCCinfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#438"><abbr title="RESTInitialRequestMessage::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#455"><abbr title="RESTInitialRequestMessage::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#459"><abbr title="RESTInitialRequestMessage::getDatosEntrada">getDatosEntrada</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#462"><abbr title="RESTInitialRequestMessage::setDatosEntrada">setDatosEntrada</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#467"><abbr title="RESTInitialRequestMessage::getSignatureVersion">getSignatureVersion</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#470"><abbr title="RESTInitialRequestMessage::sreVersion">sreVersion</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#474"><abbr title="RESTInitialRequestMessage::getSignature">getSignature</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#477"><abbr title="RESTInitialRequestMessage::setSignature">setSignature</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#481"><abbr title="RESTInitialRequestMessage::getDatosEntradaB64">getDatosEntradaB64</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#484"><abbr title="RESTInitialRequestMessage::setDatosEntradaB64">setDatosEntradaB64</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#103"><abbr title="RESTOperationMessage::getMerchant">getMerchant</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#111"><abbr title="RESTOperationMessage::setMerchant">setMerchant</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#123"><abbr title="RESTOperationMessage::getTerminal">getTerminal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#131"><abbr title="RESTOperationMessage::setTerminal">setTerminal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#143"><abbr title="RESTOperationMessage::getOrder">getOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#151"><abbr title="RESTOperationMessage::setOrder">setOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#163"><abbr title="RESTOperationMessage::getOperID">getOperID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#171"><abbr title="RESTOperationMessage::setOperID">setOperID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#183"><abbr title="RESTOperationMessage::getTransactionType">getTransactionType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#191"><abbr title="RESTOperationMessage::setTransactionType">setTransactionType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#203"><abbr title="RESTOperationMessage::getCurrency">getCurrency</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#211"><abbr title="RESTOperationMessage::setCurrency">setCurrency</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#223"><abbr title="RESTOperationMessage::getAmount">getAmount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#231"><abbr title="RESTOperationMessage::setAmount">setAmount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#242"><abbr title="RESTOperationMessage::getDcc">getDcc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#248"><abbr title="RESTOperationMessage::setDcc">setDcc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#258"><abbr title="RESTOperationMessage::getParameters">getParameters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#265"><abbr title="RESTOperationMessage::addParameter">addParameter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#276"><abbr title="RESTOperationMessage::getEmv">getEmv</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#289"><abbr title="RESTOperationMessage::setEmv">setEmv</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#300"><abbr title="RESTOperationMessage::getCardNumber">getCardNumber</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#307"><abbr title="RESTOperationMessage::setCardNumber">setCardNumber</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#317"><abbr title="RESTOperationMessage::getCardExpiryDate">getCardExpiryDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#324"><abbr title="RESTOperationMessage::setCardExpiryDate">setCardExpiryDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#334"><abbr title="RESTOperationMessage::getCvv2">getCvv2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#341"><abbr title="RESTOperationMessage::setCvv2">setCvv2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#351"><abbr title="RESTOperationMessage::createReference">createReference</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#359"><abbr title="RESTOperationMessage::useReference">useReference</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#369"><abbr title="RESTOperationMessage::useDirectPayment">useDirectPayment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#376"><abbr title="RESTOperationMessage::useMOTOPayment">useMOTOPayment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#380"><abbr title="RESTOperationMessage::addEmvParameters">addEmvParameters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#388"><abbr title="RESTOperationMessage::addEmvParameter">addEmvParameter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#399"><abbr title="RESTOperationMessage::addDCCParameter">addDCCParameter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#407"><abbr title="RESTOperationMessage::setCOFOperation">setCOFOperation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#416"><abbr title="RESTOperationMessage::setCOFTxnid">setCOFTxnid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#423"><abbr title="RESTOperationMessage::dccOperation">dccOperation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#439"><abbr title="RESTOperationMessage::setEMV3DSParamsV1">setEMV3DSParamsV1</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#464"><abbr title="RESTOperationMessage::setEMV3DSParamsV2">setEMV3DSParamsV2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#488"><abbr title="RESTOperationMessage::setExemption">setExemption</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#504"><abbr title="RESTOperationMessage::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#41"><abbr title="RESTResponseMessage::getResult">getResult</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#49"><abbr title="RESTResponseMessage::setResult">setResult</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#60"><abbr title="RESTResponseMessage::getApiCode">getApiCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#67"><abbr title="RESTResponseMessage::setApiCode">setApiCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#78"><abbr title="RESTResponseMessage::getOperation">getOperation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#86"><abbr title="RESTResponseMessage::setOperation">setOperation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#94"><abbr title="RESTResponseMessage::getTransactionType">getTransactionType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#108"><abbr title="RESTResponseMessage::protocolVersionAnalysis">protocolVersionAnalysis</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#131"><abbr title="RESTResponseMessage::PSD2analysis">PSD2analysis</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#139"><abbr title="RESTResponseMessage::getExemption">getExemption</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#147"><abbr title="RESTResponseMessage::getMDParameter">getMDParameter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#161"><abbr title="RESTResponseMessage::getAcsURLParameter">getAcsURLParameter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#175"><abbr title="RESTResponseMessage::getPAReqParameter">getPAReqParameter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#189"><abbr title="RESTResponseMessage::getThreeDSServerTransID">getThreeDSServerTransID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#203"><abbr title="RESTResponseMessage::getThreeDSInfo">getThreeDSInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#218"><abbr title="RESTResponseMessage::getThreeDSMethodURL">getThreeDSMethodURL</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#232"><abbr title="RESTResponseMessage::getCreqParameter">getCreqParameter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#246"><abbr title="RESTResponseMessage::getCOFTxnid">getCOFTxnid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#254"><abbr title="RESTResponseMessage::getDCCCurrency">getDCCCurrency</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#263"><abbr title="RESTResponseMessage::getDCCAmount">getDCCAmount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#268"><abbr title="RESTResponseMessage::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Impl/RESTAuthenticationRequestService.php.html#10"><abbr title="RESTAuthenticationRequestService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Impl/RESTAuthenticationRequestService.php.html#14"><abbr title="RESTAuthenticationRequestService::createRequestMessage">createRequestMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Impl/RESTAuthenticationRequestService.php.html#27"><abbr title="RESTAuthenticationRequestService::createResponseMessage">createResponseMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Impl/RESTDCCConfirmationService.php.html#12"><abbr title="RESTDCCConfirmationService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Impl/RESTDCCConfirmationService.php.html#16"><abbr title="RESTDCCConfirmationService::createRequestMessage">createRequestMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Impl/RESTDCCConfirmationService.php.html#32"><abbr title="RESTDCCConfirmationService::createResponseMessage">createResponseMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Impl/RESTInitialRequestService.php.html#15"><abbr title="RESTInitialRequestService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Impl/RESTInitialRequestService.php.html#19"><abbr title="RESTInitialRequestService::createRequestMessage">createRequestMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Impl/RESTInitialRequestService.php.html#32"><abbr title="RESTInitialRequestService::createResponseMessage">createResponseMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Impl/RESTOperationService.php.html#16"><abbr title="RESTOperationService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Impl/RESTOperationService.php.html#21"><abbr title="RESTOperationService::createRequestMessage">createRequestMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/Impl/RESTOperationService.php.html#35"><abbr title="RESTOperationService::createResponseMessage">createResponseMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/RESTService.php.html#16"><abbr title="RESTService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/RESTService.php.html#24"><abbr title="RESTService::sendOperation">sendOperation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/RESTService.php.html#64"><abbr title="RESTService::createRequestSOAPMessage">createRequestSOAPMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/RESTService.php.html#80"><abbr title="RESTService::createRequestMessage">createRequestMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/RESTService.php.html#81"><abbr title="RESTService::createResponseMessage">createResponseMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/RESTService.php.html#82"><abbr title="RESTService::unMarshallResponseMessage">unMarshallResponseMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/RESTService.php.html#101"><abbr title="RESTService::checkSignature">checkSignature</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/RESTService.php.html#112"><abbr title="RESTService::getSignatureKey">getSignatureKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/RESTService.php.html#115"><abbr title="RESTService::getEnv">getEnv</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/RESTService.php.html#118"><abbr title="RESTService::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTAnnotation.php.html#5"><abbr title="RESTAnnotation::getAnnotation">getAnnotation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTAnnotation.php.html#17"><abbr title="RESTAnnotation::getXmlElem">getXmlElem</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTAnnotation.php.html#21"><abbr title="RESTAnnotation::getXmlClass">getXmlClass</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#31"><abbr title="RESTLogger::initialize">initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#35"><abbr title="RESTLogger::error">error</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#39"><abbr title="RESTLogger::info">info</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#43"><abbr title="RESTLogger::debug">debug</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#53"><abbr title="RESTLogger::getLog_path">getLog_path</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#56"><abbr title="RESTLogger::setLog_path">setLog_path</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#59"><abbr title="RESTLogger::getLog_level">getLog_level</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#62"><abbr title="RESTLogger::setLog_level">setLog_level</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#65"><abbr title="RESTLogger::writeLogLine">writeLogLine</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#90"><abbr title="RESTLogger::generateIdLog">generateIdLog</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#102"><abbr title="RESTLogger::beautifyXML">beautifyXML</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#131"><abbr title="RESTLogger::escapeStringCSV">escapeStringCSV</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#33"><abbr title="RESTSignatureUtils::encrypt_3DES">encrypt_3DES</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#51"><abbr title="RESTSignatureUtils::base64_url_encode">base64_url_encode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#54"><abbr title="RESTSignatureUtils::encodeBase64">encodeBase64</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#58"><abbr title="RESTSignatureUtils::base64_url_decode">base64_url_decode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#61"><abbr title="RESTSignatureUtils::decodeBase64">decodeBase64</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#67"><abbr title="RESTSignatureUtils::mac256">mac256</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#80"><abbr title="RESTSignatureUtils::getOrder">getOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#92"><abbr title="RESTSignatureUtils::getOrderResponse">getOrderResponse</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#104"><abbr title="RESTSignatureUtils::getOrderNotif">getOrderNotif</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#116"><abbr title="RESTSignatureUtils::createMerchantSignature">createMerchantSignature</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#127"><abbr title="RESTSignatureUtils::createMerchantSignatureResponse">createMerchantSignatureResponse</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#138"><abbr title="RESTSignatureUtils::createMerchantSignatureNotif">createMerchantSignatureNotif</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Service/Impl/RESTOperationService.php.html#35"><abbr title="RESTOperationService::createResponseMessage">createResponseMessage</abbr></a></td><td class="text-right">650</td></tr>
+       <tr><td><a href="Service/Impl/RESTDCCConfirmationService.php.html#32"><abbr title="RESTDCCConfirmationService::createResponseMessage">createResponseMessage</abbr></a></td><td class="text-right">462</td></tr>
+       <tr><td><a href="Service/Impl/RESTAuthenticationRequestService.php.html#27"><abbr title="RESTAuthenticationRequestService::createResponseMessage">createResponseMessage</abbr></a></td><td class="text-right">342</td></tr>
+       <tr><td><a href="Model/RESTGenericXml.php.html#78"><abbr title="RESTGenericXml::toXml">toXml</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="Model/RESTGenericXml.php.html#129"><abbr title="RESTGenericXml::toJsonWithArray">toJsonWithArray</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#65"><abbr title="RESTLogger::writeLogLine">writeLogLine</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="Service/Impl/RESTInitialRequestService.php.html#32"><abbr title="RESTInitialRequestService::createResponseMessage">createResponseMessage</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Model/RESTGenericXml.php.html#171"><abbr title="RESTGenericXml::parseJson">parseJson</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Model/RESTGenericXml.php.html#44"><abbr title="RESTGenericXml::parseXml">parseXml</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#488"><abbr title="RESTOperationMessage::setExemption">setExemption</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Model/RESTGenericXml.php.html#27"><abbr title="RESTGenericXml::getTagContent">getTagContent</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Service/RESTService.php.html#24"><abbr title="RESTService::sendOperation">sendOperation</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#102"><abbr title="RESTLogger::beautifyXML">beautifyXML</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Constants/RESTConstants.php.html#218"><abbr title="RESTConstants::getEnviromentEndpoint">getEnviromentEndpoint</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#108"><abbr title="RESTResponseMessage::protocolVersionAnalysis">protocolVersionAnalysis</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#90"><abbr title="RESTLogger::generateIdLog">generateIdLog</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#372"><abbr title="RESTOperationElement::getThreeDSInfo">getThreeDSInfo</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#387"><abbr title="RESTOperationElement::getProtocolVersion">getProtocolVersion</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#404"><abbr title="RESTOperationElement::getAcsUrl">getAcsUrl</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#414"><abbr title="RESTOperationElement::getPaRequest">getPaRequest</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#423"><abbr title="RESTOperationElement::getAutSession">getAutSession</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#438"><abbr title="RESTOperationElement::requires3DS2">requires3DS2</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#448"><abbr title="RESTOperationElement::isPSD2">isPSD2</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#465"><abbr title="RESTOperationElement::requiresSCA">requiresSCA</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#222"><abbr title="RESTAuthenticationRequestMessage::addEmvParameters">addEmvParameters</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#386"><abbr title="RESTInitialRequestMessage::addEmvParameters">addEmvParameters</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#380"><abbr title="RESTOperationMessage::addEmvParameters">addEmvParameters</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#147"><abbr title="RESTResponseMessage::getMDParameter">getMDParameter</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#161"><abbr title="RESTResponseMessage::getAcsURLParameter">getAcsURLParameter</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#175"><abbr title="RESTResponseMessage::getPAReqParameter">getPAReqParameter</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#189"><abbr title="RESTResponseMessage::getThreeDSServerTransID">getThreeDSServerTransID</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#203"><abbr title="RESTResponseMessage::getThreeDSInfo">getThreeDSInfo</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#218"><abbr title="RESTResponseMessage::getThreeDSMethodURL">getThreeDSMethodURL</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#232"><abbr title="RESTResponseMessage::getCreqParameter">getCreqParameter</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Service/RESTService.php.html#82"><abbr title="RESTService::unMarshallResponseMessage">unMarshallResponseMessage</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Utils/RESTAnnotation.php.html#5"><abbr title="RESTAnnotation::getAnnotation">getAnnotation</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Constants/RESTConstants.php.html#208"><abbr title="RESTConstants::getJSPath">getJSPath</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Model/RESTGenericXml.php.html#7"><abbr title="RESTGenericXml::setPropertyValue">setPropertyValue</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Model/RESTGenericXml.php.html#15"><abbr title="RESTGenericXml::getPropertyValue">getPropertyValue</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#336"><abbr title="RESTOperationElement::getEmv">getEmv</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Model/element/RESTOperationElement.php.html#433"><abbr title="RESTOperationElement::requires3DS1">requires3DS1</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#180"><abbr title="RESTAuthenticationRequestMessage::getEmv">getEmv</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#191"><abbr title="RESTAuthenticationRequestMessage::getDCC">getDCC</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#233"><abbr title="RESTAuthenticationRequestMessage::addEmvParameter">addEmvParameter</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Model/message/RESTAuthenticationRequestMessage.php.html#243"><abbr title="RESTAuthenticationRequestMessage::addDCCParameter">addDCCParameter</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#300"><abbr title="RESTInitialRequestMessage::getEmv">getEmv</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Model/message/RESTInitialRequestMessage.php.html#394"><abbr title="RESTInitialRequestMessage::addEmvParameter">addEmvParameter</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#388"><abbr title="RESTOperationMessage::addEmvParameter">addEmvParameter</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Model/message/RESTOperationMessage.php.html#504"><abbr title="RESTOperationMessage::__toString">__toString</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Model/message/RESTResponseMessage.php.html#94"><abbr title="RESTResponseMessage::getTransactionType">getTransactionType</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Service/Impl/RESTDCCConfirmationService.php.html#16"><abbr title="RESTDCCConfirmationService::createRequestMessage">createRequestMessage</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Service/RESTService.php.html#101"><abbr title="RESTService::checkSignature">checkSignature</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#35"><abbr title="RESTLogger::error">error</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#39"><abbr title="RESTLogger::info">info</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#43"><abbr title="RESTLogger::debug">debug</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Utils/RESTLogger.php.html#131"><abbr title="RESTLogger::escapeStringCSV">escapeStringCSV</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#33"><abbr title="RESTSignatureUtils::encrypt_3DES">encrypt_3DES</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#80"><abbr title="RESTSignatureUtils::getOrder">getOrder</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#92"><abbr title="RESTSignatureUtils::getOrderResponse">getOrderResponse</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Utils/RESTSignatureUtils.php.html#104"><abbr title="RESTSignatureUtils::getOrderNotif">getOrderNotif</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+<<<<<<< HEAD
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 10.1.11</a> using <a href="https://www.php.net/" target="_top">PHP 8.2.10</a> and <a href="https://phpunit.de/">PHPUnit 10.5.10</a> at Thu Feb 29 15:06:31 UTC 2024.</small>
+=======
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 10.1.11</a> using <a href="https://www.php.net/" target="_top">PHP 8.2.12</a> and <a href="https://phpunit.de/">PHPUnit 10.5.11</a> at Wed Feb 28 19:25:40 UTC 2024.</small>
+>>>>>>> 37a366622a1c02eedff4ad6a35dbaf5aff21f5ea
+    </p>
+   </footer>
+  </div>
+  <script src="../../_js/jquery.min.js?v=10.1.11" type="text/javascript"></script>
+  <script src="../../_js/d3.min.js?v=10.1.11" type="text/javascript"></script>
+  <script src="../../_js/nv.d3.min.js?v=10.1.11" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([18,0,0,0,0,0,0,0,0,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([304,0,0,0,0,0,0,0,0,0,0,0], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,6,"<a href=\"Constants\/RESTConstants.php.html#3\">RESTConstants<\/a>"],[0,50,"<a href=\"Model\/RESTGenericXml.php.html#5\">RESTGenericXml<\/a>"],[0,80,"<a href=\"Model\/element\/RESTOperationElement.php.html#8\">RESTOperationElement<\/a>"],[0,42,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#9\">RESTAuthenticationRequestMessage<\/a>"],[0,11,"<a href=\"Model\/message\/RESTDCCConfirmationMessage.php.html#9\">RESTDCCConfirmationMessage<\/a>"],[0,15,"<a href=\"Model\/message\/RESTDCCElement.php.html#8\">RESTDCCElement<\/a>"],[0,15,"<a href=\"Model\/message\/RESTDCCResponseMessage.php.html#10\">RESTDCCResponseMessage<\/a>"],[0,49,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#10\">RESTInitialRequestMessage<\/a>"],[0,50,"<a href=\"Model\/message\/RESTOperationMessage.php.html#10\">RESTOperationMessage<\/a>"],[0,39,"<a href=\"Model\/message\/RESTResponseMessage.php.html#10\">RESTResponseMessage<\/a>"],[0,20,"<a href=\"Service\/Impl\/RESTAuthenticationRequestService.php.html#9\">RESTAuthenticationRequestService<\/a>"],[0,24,"<a href=\"Service\/Impl\/RESTDCCConfirmationService.php.html#11\">RESTDCCConfirmationService<\/a>"],[0,11,"<a href=\"Service\/Impl\/RESTInitialRequestService.php.html#14\">RESTInitialRequestService<\/a>"],[0,27,"<a href=\"Service\/Impl\/RESTOperationService.php.html#13\">RESTOperationService<\/a>"],[0,15,"<a href=\"Service\/RESTService.php.html#7\">RESTService<\/a>"],[0,5,"<a href=\"Utils\/RESTAnnotation.php.html#3\">RESTAnnotation<\/a>"],[0,33,"<a href=\"Utils\/RESTLogger.php.html#24\">RESTLogger<\/a>"],[0,16,"<a href=\"Utils\/RESTSignatureUtils.php.html#25\">RESTSignatureUtils<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,2,"<a href=\"Constants\/RESTConstants.php.html#208\">RESTConstants::getJSPath<\/a>"],[0,4,"<a href=\"Constants\/RESTConstants.php.html#218\">RESTConstants::getEnviromentEndpoint<\/a>"],[0,2,"<a href=\"Model\/RESTGenericXml.php.html#7\">RESTGenericXml::setPropertyValue<\/a>"],[0,2,"<a href=\"Model\/RESTGenericXml.php.html#15\">RESTGenericXml::getPropertyValue<\/a>"],[0,6,"<a href=\"Model\/RESTGenericXml.php.html#27\">RESTGenericXml::getTagContent<\/a>"],[0,7,"<a href=\"Model\/RESTGenericXml.php.html#44\">RESTGenericXml::parseXml<\/a>"],[0,12,"<a href=\"Model\/RESTGenericXml.php.html#78\">RESTGenericXml::toXml<\/a>"],[0,1,"<a href=\"Model\/RESTGenericXml.php.html#121\">RESTGenericXml::toJson<\/a>"],[0,12,"<a href=\"Model\/RESTGenericXml.php.html#129\">RESTGenericXml::toJsonWithArray<\/a>"],[0,8,"<a href=\"Model\/RESTGenericXml.php.html#171\">RESTGenericXml::parseJson<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#145\">RESTOperationElement::getAmount<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#148\">RESTOperationElement::setAmount<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#154\">RESTOperationElement::getCurrency<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#157\">RESTOperationElement::setCurrency<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#163\">RESTOperationElement::getOrder<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#166\">RESTOperationElement::setOrder<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#172\">RESTOperationElement::getSignature<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#175\">RESTOperationElement::setSignature<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#180\">RESTOperationElement::getMerchant<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#183\">RESTOperationElement::setMerchant<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#189\">RESTOperationElement::getTerminal<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#192\">RESTOperationElement::setTerminal<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#198\">RESTOperationElement::getResponseCode<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#201\">RESTOperationElement::setResponseCode<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#207\">RESTOperationElement::getAuthCode<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#210\">RESTOperationElement::setAuthCode<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#216\">RESTOperationElement::getTransactionType<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#219\">RESTOperationElement::setTransactionType<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#225\">RESTOperationElement::getSecurePayment<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#228\">RESTOperationElement::setSecurePayment<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#234\">RESTOperationElement::getLanguage<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#237\">RESTOperationElement::setLanguage<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#243\">RESTOperationElement::getMerchantData<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#246\">RESTOperationElement::setMerchantData<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#252\">RESTOperationElement::getCardCountry<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#255\">RESTOperationElement::setCardCountry<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#261\">RESTOperationElement::getCardNumber<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#264\">RESTOperationElement::setCardNumber<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#270\">RESTOperationElement::getCardBrand<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#273\">RESTOperationElement::setCardBrand<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#279\">RESTOperationElement::getCardType<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#282\">RESTOperationElement::setCardType<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#288\">RESTOperationElement::getExpiryDate<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#291\">RESTOperationElement::setExpiryDate<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#297\">RESTOperationElement::getMerchantIdentifier<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#300\">RESTOperationElement::setMerchantIdentifier<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#306\">RESTOperationElement::getPsd2<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#310\">RESTOperationElement::setPsd2<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#316\">RESTOperationElement::getExemption<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#320\">RESTOperationElement::setExemption<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#326\">RESTOperationElement::getCof<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#330\">RESTOperationElement::setCof<\/a>"],[0,2,"<a href=\"Model\/element\/RESTOperationElement.php.html#336\">RESTOperationElement::getEmv<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#342\">RESTOperationElement::setEmv<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#348\">RESTOperationElement::getCofTxnid<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#351\">RESTOperationElement::setCofTxnid<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#356\">RESTOperationElement::getDcc<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#359\">RESTOperationElement::setDcc<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#364\">RESTOperationElement::getInfoMonedaTarjeta<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#367\">RESTOperationElement::setInfoMonedaTarjeta<\/a>"],[0,3,"<a href=\"Model\/element\/RESTOperationElement.php.html#372\">RESTOperationElement::getThreeDSInfo<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#382\">RESTOperationElement::setThreeDSInfo<\/a>"],[0,3,"<a href=\"Model\/element\/RESTOperationElement.php.html#387\">RESTOperationElement::getProtocolVersion<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#396\">RESTOperationElement::setProtocolVersion<\/a>"],[0,3,"<a href=\"Model\/element\/RESTOperationElement.php.html#404\">RESTOperationElement::getAcsUrl<\/a>"],[0,3,"<a href=\"Model\/element\/RESTOperationElement.php.html#414\">RESTOperationElement::getPaRequest<\/a>"],[0,3,"<a href=\"Model\/element\/RESTOperationElement.php.html#423\">RESTOperationElement::getAutSession<\/a>"],[0,2,"<a href=\"Model\/element\/RESTOperationElement.php.html#433\">RESTOperationElement::requires3DS1<\/a>"],[0,3,"<a href=\"Model\/element\/RESTOperationElement.php.html#438\">RESTOperationElement::requires3DS2<\/a>"],[0,3,"<a href=\"Model\/element\/RESTOperationElement.php.html#448\">RESTOperationElement::isPSD2<\/a>"],[0,3,"<a href=\"Model\/element\/RESTOperationElement.php.html#465\">RESTOperationElement::requiresSCA<\/a>"],[0,1,"<a href=\"Model\/element\/RESTOperationElement.php.html#479\">RESTOperationElement::__toString<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#85\">RESTAuthenticationRequestMessage::getMerchant<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#88\">RESTAuthenticationRequestMessage::setMerchant<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#94\">RESTAuthenticationRequestMessage::getTerminal<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#97\">RESTAuthenticationRequestMessage::setTerminal<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#103\">RESTAuthenticationRequestMessage::getOrder<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#106\">RESTAuthenticationRequestMessage::setOrder<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#112\">RESTAuthenticationRequestMessage::getOperID<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#115\">RESTAuthenticationRequestMessage::setOperID<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#121\">RESTAuthenticationRequestMessage::getTransactionType<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#124\">RESTAuthenticationRequestMessage::setTransactionType<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#130\">RESTAuthenticationRequestMessage::getCurrency<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#133\">RESTAuthenticationRequestMessage::setCurrency<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#139\">RESTAuthenticationRequestMessage::getAmount<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#142\">RESTAuthenticationRequestMessage::setAmount<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#148\">RESTAuthenticationRequestMessage::getCardNumber<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#151\">RESTAuthenticationRequestMessage::setCardNumber<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#156\">RESTAuthenticationRequestMessage::getCardExpiryDate<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#159\">RESTAuthenticationRequestMessage::setCardExpiryDate<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#164\">RESTAuthenticationRequestMessage::getCvv2<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#167\">RESTAuthenticationRequestMessage::setCvv2<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#172\">RESTAuthenticationRequestMessage::getParameters<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#175\">RESTAuthenticationRequestMessage::addParameter<\/a>"],[0,2,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#180\">RESTAuthenticationRequestMessage::getEmv<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#186\">RESTAuthenticationRequestMessage::setEmv<\/a>"],[0,2,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#191\">RESTAuthenticationRequestMessage::getDCC<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#197\">RESTAuthenticationRequestMessage::setDCC<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#207\">RESTAuthenticationRequestMessage::createReference<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#215\">RESTAuthenticationRequestMessage::useReference<\/a>"],[0,3,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#222\">RESTAuthenticationRequestMessage::addEmvParameters<\/a>"],[0,2,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#233\">RESTAuthenticationRequestMessage::addEmvParameter<\/a>"],[0,2,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#243\">RESTAuthenticationRequestMessage::addDCCParameter<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#254\">RESTAuthenticationRequestMessage::setCOFOperation<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#263\">RESTAuthenticationRequestMessage::setCOFTxnid<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#270\">RESTAuthenticationRequestMessage::demandDccinfo<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#279\">RESTAuthenticationRequestMessage::challengeRequestV1<\/a>"],[0,1,"<a href=\"Model\/message\/RESTAuthenticationRequestMessage.php.html#291\">RESTAuthenticationRequestMessage::challengeRequestV2<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCConfirmationMessage.php.html#35\">RESTDCCConfirmationMessage::getOrder<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCConfirmationMessage.php.html#38\">RESTDCCConfirmationMessage::setOrder<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCConfirmationMessage.php.html#42\">RESTDCCConfirmationMessage::getMerchant<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCConfirmationMessage.php.html#45\">RESTDCCConfirmationMessage::setMerchant<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCConfirmationMessage.php.html#49\">RESTDCCConfirmationMessage::getTerminal<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCConfirmationMessage.php.html#52\">RESTDCCConfirmationMessage::setTerminal<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCConfirmationMessage.php.html#56\">RESTDCCConfirmationMessage::getCurrencyCode<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCConfirmationMessage.php.html#59\">RESTDCCConfirmationMessage::setCurrencyCode<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCConfirmationMessage.php.html#63\">RESTDCCConfirmationMessage::getSesion<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCConfirmationMessage.php.html#66\">RESTDCCConfirmationMessage::setSesion<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCConfirmationMessage.php.html#70\">RESTDCCConfirmationMessage::__toString<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCElement.php.html#43\">RESTDCCElement::getCurrency<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCElement.php.html#46\">RESTDCCElement::setCurrency<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCElement.php.html#50\">RESTDCCElement::getCurrencyString<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCElement.php.html#53\">RESTDCCElement::setCurrencyString<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCElement.php.html#57\">RESTDCCElement::getCurrencyCode<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCElement.php.html#60\">RESTDCCElement::setCurrencyCode<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCElement.php.html#64\">RESTDCCElement::getChangeRate<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCElement.php.html#67\">RESTDCCElement::setChangeRate<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCElement.php.html#71\">RESTDCCElement::getChangeDate<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCElement.php.html#74\">RESTDCCElement::setChangeDate<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCElement.php.html#78\">RESTDCCElement::getChecked<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCElement.php.html#81\">RESTDCCElement::setChecked<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCElement.php.html#85\">RESTDCCElement::getAmount<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCElement.php.html#88\">RESTDCCElement::setAmount<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCElement.php.html#92\">RESTDCCElement::__toString<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCResponseMessage.php.html#42\">RESTDCCResponseMessage::getResult<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCResponseMessage.php.html#45\">RESTDCCResponseMessage::setResult<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCResponseMessage.php.html#49\">RESTDCCResponseMessage::getApiCode<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCResponseMessage.php.html#52\">RESTDCCResponseMessage::setApiCode<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCResponseMessage.php.html#56\">RESTDCCResponseMessage::getDcc0<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCResponseMessage.php.html#59\">RESTDCCResponseMessage::setDcc0<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCResponseMessage.php.html#63\">RESTDCCResponseMessage::getDcc1<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCResponseMessage.php.html#66\">RESTDCCResponseMessage::setDcc1<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCResponseMessage.php.html#70\">RESTDCCResponseMessage::getDccMargin<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCResponseMessage.php.html#73\">RESTDCCResponseMessage::setDccMargin<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCResponseMessage.php.html#77\">RESTDCCResponseMessage::getBankName<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCResponseMessage.php.html#80\">RESTDCCResponseMessage::setBankName<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCResponseMessage.php.html#84\">RESTDCCResponseMessage::getSesion<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCResponseMessage.php.html#87\">RESTDCCResponseMessage::setSesion<\/a>"],[0,1,"<a href=\"Model\/message\/RESTDCCResponseMessage.php.html#91\">RESTDCCResponseMessage::__toString<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#127\">RESTInitialRequestMessage::getMerchant<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#135\">RESTInitialRequestMessage::setMerchant<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#147\">RESTInitialRequestMessage::getTerminal<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#155\">RESTInitialRequestMessage::setTerminal<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#167\">RESTInitialRequestMessage::getOrder<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#175\">RESTInitialRequestMessage::setOrder<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#187\">RESTInitialRequestMessage::getOperID<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#195\">RESTInitialRequestMessage::setOperID<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#207\">RESTInitialRequestMessage::getTransactionType<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#215\">RESTInitialRequestMessage::setTransactionType<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#227\">RESTInitialRequestMessage::getCurrency<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#235\">RESTInitialRequestMessage::setCurrency<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#247\">RESTInitialRequestMessage::getAmount<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#255\">RESTInitialRequestMessage::setAmount<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#266\">RESTInitialRequestMessage::getDcc<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#272\">RESTInitialRequestMessage::setDcc<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#282\">RESTInitialRequestMessage::getParameters<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#289\">RESTInitialRequestMessage::addParameter<\/a>"],[0,2,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#300\">RESTInitialRequestMessage::getEmv<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#312\">RESTInitialRequestMessage::setEmv<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#323\">RESTInitialRequestMessage::getCardNumber<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#330\">RESTInitialRequestMessage::setCardNumber<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#340\">RESTInitialRequestMessage::getCardExpiryDate<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#347\">RESTInitialRequestMessage::setCardExpiryDate<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#356\">RESTInitialRequestMessage::getCvv2<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#363\">RESTInitialRequestMessage::setCvv2<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#374\">RESTInitialRequestMessage::createReference<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#382\">RESTInitialRequestMessage::useReference<\/a>"],[0,3,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#386\">RESTInitialRequestMessage::addEmvParameters<\/a>"],[0,2,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#394\">RESTInitialRequestMessage::addEmvParameter<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#405\">RESTInitialRequestMessage::demandCardData<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#412\">RESTInitialRequestMessage::demandExemptionInfo<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#419\">RESTInitialRequestMessage::setCOFOperation<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#427\">RESTInitialRequestMessage::setCOFTxnid<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#434\">RESTInitialRequestMessage::demandDCCinfo<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#438\">RESTInitialRequestMessage::__toString<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#455\">RESTInitialRequestMessage::__construct<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#459\">RESTInitialRequestMessage::getDatosEntrada<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#462\">RESTInitialRequestMessage::setDatosEntrada<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#467\">RESTInitialRequestMessage::getSignatureVersion<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#470\">RESTInitialRequestMessage::sreVersion<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#474\">RESTInitialRequestMessage::getSignature<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#477\">RESTInitialRequestMessage::setSignature<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#481\">RESTInitialRequestMessage::getDatosEntradaB64<\/a>"],[0,1,"<a href=\"Model\/message\/RESTInitialRequestMessage.php.html#484\">RESTInitialRequestMessage::setDatosEntradaB64<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#103\">RESTOperationMessage::getMerchant<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#111\">RESTOperationMessage::setMerchant<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#123\">RESTOperationMessage::getTerminal<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#131\">RESTOperationMessage::setTerminal<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#143\">RESTOperationMessage::getOrder<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#151\">RESTOperationMessage::setOrder<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#163\">RESTOperationMessage::getOperID<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#171\">RESTOperationMessage::setOperID<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#183\">RESTOperationMessage::getTransactionType<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#191\">RESTOperationMessage::setTransactionType<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#203\">RESTOperationMessage::getCurrency<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#211\">RESTOperationMessage::setCurrency<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#223\">RESTOperationMessage::getAmount<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#231\">RESTOperationMessage::setAmount<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#242\">RESTOperationMessage::getDcc<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#248\">RESTOperationMessage::setDcc<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#258\">RESTOperationMessage::getParameters<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#265\">RESTOperationMessage::addParameter<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#276\">RESTOperationMessage::getEmv<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#289\">RESTOperationMessage::setEmv<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#300\">RESTOperationMessage::getCardNumber<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#307\">RESTOperationMessage::setCardNumber<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#317\">RESTOperationMessage::getCardExpiryDate<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#324\">RESTOperationMessage::setCardExpiryDate<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#334\">RESTOperationMessage::getCvv2<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#341\">RESTOperationMessage::setCvv2<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#351\">RESTOperationMessage::createReference<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#359\">RESTOperationMessage::useReference<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#369\">RESTOperationMessage::useDirectPayment<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#376\">RESTOperationMessage::useMOTOPayment<\/a>"],[0,3,"<a href=\"Model\/message\/RESTOperationMessage.php.html#380\">RESTOperationMessage::addEmvParameters<\/a>"],[0,2,"<a href=\"Model\/message\/RESTOperationMessage.php.html#388\">RESTOperationMessage::addEmvParameter<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#399\">RESTOperationMessage::addDCCParameter<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#407\">RESTOperationMessage::setCOFOperation<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#416\">RESTOperationMessage::setCOFTxnid<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#423\">RESTOperationMessage::dccOperation<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#439\">RESTOperationMessage::setEMV3DSParamsV1<\/a>"],[0,1,"<a href=\"Model\/message\/RESTOperationMessage.php.html#464\">RESTOperationMessage::setEMV3DSParamsV2<\/a>"],[0,7,"<a href=\"Model\/message\/RESTOperationMessage.php.html#488\">RESTOperationMessage::setExemption<\/a>"],[0,2,"<a href=\"Model\/message\/RESTOperationMessage.php.html#504\">RESTOperationMessage::__toString<\/a>"],[0,1,"<a href=\"Model\/message\/RESTResponseMessage.php.html#41\">RESTResponseMessage::getResult<\/a>"],[0,1,"<a href=\"Model\/message\/RESTResponseMessage.php.html#49\">RESTResponseMessage::setResult<\/a>"],[0,1,"<a href=\"Model\/message\/RESTResponseMessage.php.html#60\">RESTResponseMessage::getApiCode<\/a>"],[0,1,"<a href=\"Model\/message\/RESTResponseMessage.php.html#67\">RESTResponseMessage::setApiCode<\/a>"],[0,1,"<a href=\"Model\/message\/RESTResponseMessage.php.html#78\">RESTResponseMessage::getOperation<\/a>"],[0,1,"<a href=\"Model\/message\/RESTResponseMessage.php.html#86\">RESTResponseMessage::setOperation<\/a>"],[0,2,"<a href=\"Model\/message\/RESTResponseMessage.php.html#94\">RESTResponseMessage::getTransactionType<\/a>"],[0,4,"<a href=\"Model\/message\/RESTResponseMessage.php.html#108\">RESTResponseMessage::protocolVersionAnalysis<\/a>"],[0,1,"<a href=\"Model\/message\/RESTResponseMessage.php.html#131\">RESTResponseMessage::PSD2analysis<\/a>"],[0,1,"<a href=\"Model\/message\/RESTResponseMessage.php.html#139\">RESTResponseMessage::getExemption<\/a>"],[0,3,"<a href=\"Model\/message\/RESTResponseMessage.php.html#147\">RESTResponseMessage::getMDParameter<\/a>"],[0,3,"<a href=\"Model\/message\/RESTResponseMessage.php.html#161\">RESTResponseMessage::getAcsURLParameter<\/a>"],[0,3,"<a href=\"Model\/message\/RESTResponseMessage.php.html#175\">RESTResponseMessage::getPAReqParameter<\/a>"],[0,3,"<a href=\"Model\/message\/RESTResponseMessage.php.html#189\">RESTResponseMessage::getThreeDSServerTransID<\/a>"],[0,3,"<a href=\"Model\/message\/RESTResponseMessage.php.html#203\">RESTResponseMessage::getThreeDSInfo<\/a>"],[0,3,"<a href=\"Model\/message\/RESTResponseMessage.php.html#218\">RESTResponseMessage::getThreeDSMethodURL<\/a>"],[0,3,"<a href=\"Model\/message\/RESTResponseMessage.php.html#232\">RESTResponseMessage::getCreqParameter<\/a>"],[0,1,"<a href=\"Model\/message\/RESTResponseMessage.php.html#246\">RESTResponseMessage::getCOFTxnid<\/a>"],[0,1,"<a href=\"Model\/message\/RESTResponseMessage.php.html#254\">RESTResponseMessage::getDCCCurrency<\/a>"],[0,1,"<a href=\"Model\/message\/RESTResponseMessage.php.html#263\">RESTResponseMessage::getDCCAmount<\/a>"],[0,1,"<a href=\"Model\/message\/RESTResponseMessage.php.html#268\">RESTResponseMessage::__toString<\/a>"],[0,1,"<a href=\"Service\/Impl\/RESTAuthenticationRequestService.php.html#10\">RESTAuthenticationRequestService::__construct<\/a>"],[0,1,"<a href=\"Service\/Impl\/RESTAuthenticationRequestService.php.html#14\">RESTAuthenticationRequestService::createRequestMessage<\/a>"],[0,18,"<a href=\"Service\/Impl\/RESTAuthenticationRequestService.php.html#27\">RESTAuthenticationRequestService::createResponseMessage<\/a>"],[0,1,"<a href=\"Service\/Impl\/RESTDCCConfirmationService.php.html#12\">RESTDCCConfirmationService::__construct<\/a>"],[0,2,"<a href=\"Service\/Impl\/RESTDCCConfirmationService.php.html#16\">RESTDCCConfirmationService::createRequestMessage<\/a>"],[0,21,"<a href=\"Service\/Impl\/RESTDCCConfirmationService.php.html#32\">RESTDCCConfirmationService::createResponseMessage<\/a>"],[0,1,"<a href=\"Service\/Impl\/RESTInitialRequestService.php.html#15\">RESTInitialRequestService::__construct<\/a>"],[0,1,"<a href=\"Service\/Impl\/RESTInitialRequestService.php.html#19\">RESTInitialRequestService::createRequestMessage<\/a>"],[0,9,"<a href=\"Service\/Impl\/RESTInitialRequestService.php.html#32\">RESTInitialRequestService::createResponseMessage<\/a>"],[0,1,"<a href=\"Service\/Impl\/RESTOperationService.php.html#16\">RESTOperationService::__construct<\/a>"],[0,1,"<a href=\"Service\/Impl\/RESTOperationService.php.html#21\">RESTOperationService::createRequestMessage<\/a>"],[0,25,"<a href=\"Service\/Impl\/RESTOperationService.php.html#35\">RESTOperationService::createResponseMessage<\/a>"],[0,1,"<a href=\"Service\/RESTService.php.html#16\">RESTService::__construct<\/a>"],[0,5,"<a href=\"Service\/RESTService.php.html#24\">RESTService::sendOperation<\/a>"],[0,1,"<a href=\"Service\/RESTService.php.html#64\">RESTService::createRequestSOAPMessage<\/a>"],[0,0,"<a href=\"Service\/RESTService.php.html#80\">RESTService::createRequestMessage<\/a>"],[0,0,"<a href=\"Service\/RESTService.php.html#81\">RESTService::createResponseMessage<\/a>"],[0,3,"<a href=\"Service\/RESTService.php.html#82\">RESTService::unMarshallResponseMessage<\/a>"],[0,2,"<a href=\"Service\/RESTService.php.html#101\">RESTService::checkSignature<\/a>"],[0,1,"<a href=\"Service\/RESTService.php.html#112\">RESTService::getSignatureKey<\/a>"],[0,1,"<a href=\"Service\/RESTService.php.html#115\">RESTService::getEnv<\/a>"],[0,1,"<a href=\"Service\/RESTService.php.html#118\">RESTService::__toString<\/a>"],[0,3,"<a href=\"Utils\/RESTAnnotation.php.html#5\">RESTAnnotation::getAnnotation<\/a>"],[0,1,"<a href=\"Utils\/RESTAnnotation.php.html#17\">RESTAnnotation::getXmlElem<\/a>"],[0,1,"<a href=\"Utils\/RESTAnnotation.php.html#21\">RESTAnnotation::getXmlClass<\/a>"],[0,1,"<a href=\"Utils\/RESTLogger.php.html#31\">RESTLogger::initialize<\/a>"],[0,2,"<a href=\"Utils\/RESTLogger.php.html#35\">RESTLogger::error<\/a>"],[0,2,"<a href=\"Utils\/RESTLogger.php.html#39\">RESTLogger::info<\/a>"],[0,2,"<a href=\"Utils\/RESTLogger.php.html#43\">RESTLogger::debug<\/a>"],[0,1,"<a href=\"Utils\/RESTLogger.php.html#53\">RESTLogger::getLog_path<\/a>"],[0,1,"<a href=\"Utils\/RESTLogger.php.html#56\">RESTLogger::setLog_path<\/a>"],[0,1,"<a href=\"Utils\/RESTLogger.php.html#59\">RESTLogger::getLog_level<\/a>"],[0,1,"<a href=\"Utils\/RESTLogger.php.html#62\">RESTLogger::setLog_level<\/a>"],[0,11,"<a href=\"Utils\/RESTLogger.php.html#65\">RESTLogger::writeLogLine<\/a>"],[0,4,"<a href=\"Utils\/RESTLogger.php.html#90\">RESTLogger::generateIdLog<\/a>"],[0,5,"<a href=\"Utils\/RESTLogger.php.html#102\">RESTLogger::beautifyXML<\/a>"],[0,2,"<a href=\"Utils\/RESTLogger.php.html#131\">RESTLogger::escapeStringCSV<\/a>"],[0,2,"<a href=\"Utils\/RESTSignatureUtils.php.html#33\">RESTSignatureUtils::encrypt_3DES<\/a>"],[0,1,"<a href=\"Utils\/RESTSignatureUtils.php.html#51\">RESTSignatureUtils::base64_url_encode<\/a>"],[0,1,"<a href=\"Utils\/RESTSignatureUtils.php.html#54\">RESTSignatureUtils::encodeBase64<\/a>"],[0,1,"<a href=\"Utils\/RESTSignatureUtils.php.html#58\">RESTSignatureUtils::base64_url_decode<\/a>"],[0,1,"<a href=\"Utils\/RESTSignatureUtils.php.html#61\">RESTSignatureUtils::decodeBase64<\/a>"],[0,1,"<a href=\"Utils\/RESTSignatureUtils.php.html#67\">RESTSignatureUtils::mac256<\/a>"],[0,2,"<a href=\"Utils\/RESTSignatureUtils.php.html#80\">RESTSignatureUtils::getOrder<\/a>"],[0,2,"<a href=\"Utils\/RESTSignatureUtils.php.html#92\">RESTSignatureUtils::getOrderResponse<\/a>"],[0,2,"<a href=\"Utils\/RESTSignatureUtils.php.html#104\">RESTSignatureUtils::getOrderNotif<\/a>"],[0,1,"<a href=\"Utils\/RESTSignatureUtils.php.html#116\">RESTSignatureUtils::createMerchantSignature<\/a>"],[0,1,"<a href=\"Utils\/RESTSignatureUtils.php.html#127\">RESTSignatureUtils::createMerchantSignatureResponse<\/a>"],[0,1,"<a href=\"Utils\/RESTSignatureUtils.php.html#138\">RESTSignatureUtils::createMerchantSignatureNotif<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

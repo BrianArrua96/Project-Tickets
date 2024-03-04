@@ -1,0 +1,10 @@
+= API Microservei d'optimització d'images
+
+Para fácilitar la app y su manera que trabaja con las imagenes se creo una API que aisla las responsabilidaddes de las aplicaciones que se involucran al sistema. +
+
+Consta de un contenedor docker, cada imagen que se suba a la app sera enviada con este microservicio que realizara las siguientes acciones: +
+
+**POST**: Recibe la imagen y genera 3 versiones de ella con distintas medidas. +
+**GET**: Devolverá la url unica de la imagen optimizada. +
+**PUT**: Actualiza la imagen +
+**DELETE**: Borra la imagen +
